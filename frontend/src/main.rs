@@ -67,13 +67,13 @@ impl Component for Model {
     fn view(&self, ctx: &Context<Self>) -> Html {
         let vec = testvec();
         let vector = vec.into_iter().map(|children| html!{
-            <button name={children.name.to_string()} onclick={ctx.link().callback(move |_| Msg::ChildClicked { child_id: children.id.clone() })}>{children.name.to_string()}</button>
+            <button class={"button"} name={children.name.to_string()} onclick={ctx.link().callback(move |_| Msg::ChildClicked { child_id: children.id.clone() })}>{children.name.to_string()}</button>
         }).collect::<Html>();
 
         html!{
             <>
                 <h2>{"Timestamp"}</h2>
-                <p> {self.activeId}</p>
+                <p> {"ID of Active Track: "}{self.activeId}</p>
                 {vector}
             </>
         }
