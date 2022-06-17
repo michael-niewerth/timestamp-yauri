@@ -1,10 +1,10 @@
 {
-    "build": {
-      "distDir": "../frontend/dist",
-      "devPath": "http://localhost:8080",
-      "beforeDevCommand": "cd frontend && trunk serve",
-      "beforeBuildCommand": "cd frontend && trunk build",
-      "withGlobalTauri": true
+  "build": {
+    "distDir": "../frontend/dist",
+    "devPath": "http://localhost:8080",
+    "beforeDevCommand": "cd frontend && trunk serve",
+    "beforeBuildCommand": "cd frontend && trunk build",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "timestamp",
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tox.timestamp",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
